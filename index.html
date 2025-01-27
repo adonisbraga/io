@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encantos Pet</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                Encantos Pet 
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Produtos</a>
+                <a href="#address">Contato</a>
+            </div>
+            <div class="cart-container">
+                <button id="cart-button">
+                    <i class="fas fa-shopping-cart"></i> Carrinho (<span id="cart-count">0</span>)
+                </button>
+                <div id="cart-modal" class="cart-modal">
+                    <h2>Meu Carrinho</h2>
+                    <div id="cart-items" class="cart-items"></div>
+                    <div class="cart-footer">
+                        <p>Total: R$ <span id="cart-total">0.00</span></p>
+                        <button id="checkout-button">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="img/logoloja.jpeg" alt="Cachorro feliz" class="hero-image">
+            <div>
+                <h1>Bem-vindo a EncantosPet</h1>
+                <p>Cuidando do seu melhor amigo com amor e dedicação</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2 class="section-title">Nossos Produtos</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="img/loja7.jpeg" alt="Ração Premium">
+                <div class="product-info">
+                    <h3>Ração Premium Golden</h3>
+                    <p>Nutrição completa para seu pet</p>
+                    <div class="price">R$ 89,90</div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/loja2.jpeg" alt="Brinquedo">
+                <div class="product-info">
+                    <h3>Ração Para Gatos</h3>
+                    <p>Nutrição completa para seu pet</p>
+                    <div class="price">R$ 24,90</div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/loja3.jpeg" alt="Coleira">
+                <div class="product-info">
+                    <h3>Petiscos</h3>
+                    <p>A melhor sobremesa para seu pet</p>
+                    <div class="price">R$ 7,99</div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/loja3.jpeg" alt="Coleira">
+                <div class="product-info">
+                    <h3>Coleira Ajustável</h3>
+                    <p>Conforto e segurança</p>
+                    <div class="price">R$ 29,90</div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/loja3.jpeg" alt="Coleira">
+                <div class="product-info">
+                    <h3>Coleira Ajustável</h3>
+                    <p>Conforto e segurança</p>
+                    <div class="price">R$ 29,90</div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/loja3.jpeg" alt="Coleira">
+                <div class="product-info">
+                    <h3>Coleira Ajustável</h3>
+                    <p>Conforto e segurança</p>
+                    <div class="price">R$ 29,90</div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="address" id="address">
+        <h2 class="section-title">Onde Nos Encontrar</h2>
+        <div class="contact-info">
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Endereço</h3>
+                <p>Avenida Dom Eugenio Sales, 259<br>  Boca do Rio - Salvador BA</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h3>Telefone</h3>
+                <p>(11) 1234-5678</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-clock"></i>
+                <h3>Horário</h3>
+                <p>Seg - Sáb: 8:30h às 19h</p>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9499056837694!2d-38.42538462492341!3d-12.975055887340678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161a4a10b1aacd%3A0x43f6a8f2ddae4bc5!2sAv.%20Dom%20Eug%C3%AAnio%20Sales%2C%20259%20-%20Boca%20do%20Rio%2C%20Salvador%20-%20BA%2C%2041706-670!5e0!3m2!1spt-BR!2sbr!4v1737558079388!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <script>
+        const cart = [];
+        const cartButton = document.getElementById('cart-button');
+        const cartModal = document.getElementById('cart-modal');
+        const cartItemsContainer = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        const cartCount = document.getElementById('cart-count');
+        const checkoutButton = document.getElementById('checkout-button');
+    
+        // Toggle modal visibility
+        cartButton.addEventListener('click', () => {
+            cartModal.classList.toggle('active');
+        });
+    
+        // Add to cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const productCard = button.closest('.product-card');
+                if (!productCard) return;
+    
+                const productName = productCard.querySelector('h3')?.textContent.trim() || "Produto sem nome";
+                const productPriceText = productCard.querySelector('.price')?.textContent || "0";
+                const productPrice = parseFloat(productPriceText.replace('R$', '').replace(',', '.').trim()) || 0;
+    
+                const existingProductIndex = cart.findIndex(item => item.name === productName);
+    
+                if (existingProductIndex !== -1) {
+                    cart[existingProductIndex].quantity++;
+                } else {
+                    cart.push({ name: productName, price: productPrice, quantity: 1 });
+                }
+    
+                updateCart();
+            });
+        });
+    
+        function updateCart() {
+            const totalItems = cart.reduce((count, item) => count + item.quantity, 0);
+            cartCount.textContent = totalItems;
+    
+            cartItemsContainer.innerHTML = '';
+            cart.forEach((item, index) => {
+                const itemDiv = document.createElement('div');
+                itemDiv.classList.add('cart-item');
+                itemDiv.insertAdjacentHTML('beforeend', `
+                    <span>${item.name} (x${item.quantity})</span>
+                    <span>R$ ${(item.price * item.quantity).toFixed(2).replace('.', ',')}</span>
+                    <button class="remove-item" data-index="${index}">Remover</button>
+                `);
+                cartItemsContainer.appendChild(itemDiv);
+            });
+    
+            const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+            cartTotal.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+    
+            document.querySelectorAll('.remove-item').forEach(button => {
+                button.addEventListener('click', () => {
+                    const index = parseInt(button.getAttribute('data-index'), 10);
+                    if (!isNaN(index) && cart[index]) {
+                        cart.splice(index, 1);
+                        updateCart();
+                    }
+                });
+            });
+        }
+    
+        // Add payment method options
+        const paymentMethodsHTML = `
+            <h3>Escolha a forma de pagamento:</h3>
+            <div>
+                <input type="radio" id="credit-card" name="payment" value="Cartão de Crédito" checked>
+                <label for="credit-card">Cartão de Crédito</label>
+            </div>
+            <div>
+                <input type="radio" id="pix" name="payment" value="Pix">
+                <label for="pix">Pix</label>
+            </div>
+            <div>
+                <input type="radio" id="boleto" name="payment" value="Boleto Bancário">
+                <label for="boleto">Boleto Bancário</label>
+            </div>
+            <button id="confirm-payment">Confirmar Pedido</button>
+        `;
+    
+        cartModal.insertAdjacentHTML('beforeend', paymentMethodsHTML);
+    
+        const confirmPaymentButton = document.getElementById('confirm-payment');
+        confirmPaymentButton.addEventListener('click', () => {
+            const selectedPayment = document.querySelector('input[name="payment"]:checked')?.value;
+    
+            if (cart.length === 0) {
+                alert('Seu carrinho está vazio!');
+                return;
+            }
+    
+            alert(`Pagamento selecionado: ${selectedPayment}`);
+    
+            const phoneNumber = '5599999999999'; // Substitua pelo número do WhatsApp
+            let message = '*Pedido Encantos Pet*\n';
+            message += 'Itens do Carrinho:\n';
+    
+            cart.forEach(item => {
+                message += `- ${item.name} (x${item.quantity}): R$ ${(item.price * item.quantity).toFixed(2).replace('.', ',')}\n`;
+            });
+    
+            const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+            message += `\nTotal: R$ ${total.toFixed(2).replace('.', ',')}\n`;
+            message += `Forma de Pagamento: ${selectedPayment}\n`;
+            message += '\nObrigado por comprar com a Encantos Pet!';
+    
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+            // Automatically open the WhatsApp URL
+            window.location.href = whatsappURL;
+        });
+        
+        function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+       }
+
+           // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.remove('active');
+      });
+      });
+
+         // Fechar menu ao clicar fora
+        document.addEventListener('click', (e) => {
+        const navLinks = document.querySelector('.nav-links');
+        const menuToggle = document.querySelector('.menu-toggle');
+    
+        if (!navLinks.contains(e.target) && !menuToggle.contains(e.target) && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+      }
+      });
+    </script>
+    
+</body>
+</html>
